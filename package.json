@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "vite build",
+    "test:e2e": "vue-cli-service test:e2e",
     "dev": "vite"
   },
   "dependencies": {
@@ -11,11 +12,15 @@
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@vue/cli-plugin-e2e-cypress": "^4.5.9",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "^4.5.9",
     "@vue/compiler-sfc": "^3.0.2",
+    "babel-loader": "^8.2.2",
+    "postcss-css-reset": "^1.0.2",
     "postcss-nested": "^5.0.1",
     "postcss-preset-env": "^6.7.0",
     "rucksack-css": "^1.0.2",

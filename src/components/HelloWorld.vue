@@ -21,7 +21,7 @@ export default defineComponent({
   border: 1px solid red;
 
   & h1 {
-    color: red;
+    color: var(--living-coral);
   }
 }
 </style>
