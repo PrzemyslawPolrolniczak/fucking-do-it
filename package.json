@@ -1,0 +1,25 @@
+{
+  "name": "fucking-do-it",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "vue": "^3.0.3",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "^4.5.9",
+    "@vue/compiler-sfc": "^3.0.2",
+    "postcss-nested": "^5.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "rucksack-css": "^1.0.2",
+    "typescript": "~3.9.3",
+    "vite": "^1.0.0-rc.8"
+  }
+}
