@@ -1,15 +1,15 @@
 <template>
   <div class="container">
     <div class="logo">LOGO</div>
-    <category-tile></category-tile>
+    <category-tile text="Hello World"></category-tile>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { CategoryTile } from "./CategoryTile.vue";
+import CategoryTile from "@/components/CategoryTile.vue";
 
-export const NavBar = defineComponent({
+export default defineComponent({
   name: "NavBar",
   components: {
     CategoryTile,

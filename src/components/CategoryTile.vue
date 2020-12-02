@@ -1,14 +1,14 @@
 <template>
   <div class="category-tile">
     <div class="box"><span>X</span></div>
-    <span class="text">{text}</span>
+    <span class="text">{{ text }}</span>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
-export const CategoryTile = defineComponent({
+export default defineComponent({
   name: "CategoryTile",
   props: {
     text: String,
