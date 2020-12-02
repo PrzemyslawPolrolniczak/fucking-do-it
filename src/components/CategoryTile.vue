@@ -1,8 +1,8 @@
 <template>
-  <div class="category-tile">
+  <router-link class="category-tile" :to="to">
     <div class="box"><span>X</span></div>
     <span class="text">{{ text }}</span>
-  </div>
+  </router-link>
 </template>
 
 <script lang="ts">
@@ -11,12 +11,17 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "CategoryTile",
   props: {
-    text: String,
+    text: {
+      type: String,
+      required: true,
+    },
+    to: {
+      type: String,
+      required: true,
+    },
   },
   data() {
-    return {
-      text: this.text,
-    };
+    return {};
   },
 });
 </script>
@@ -28,6 +33,7 @@ export default defineComponent({
   display: flex;
   align-items: center;
   transition: background 0.1s;
+  color: inherit;
 
   &:hover {
     background-color: var(--color4);
@@ -52,6 +58,7 @@ export default defineComponent({
   & .text {
     font-weight: 700;
     padding: 0 1rem;
+    font-size: 1.2rem;
     transition: color 0.1s;
   }
 }
